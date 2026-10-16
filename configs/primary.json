@@ -1,0 +1,86 @@
+{
+  "status": "standard_csv_reader_and_eight_configuration_runner_connected_connectivity_only",
+  "external_inputs": {
+    "dataset_manifest": "datasets/nhs_v1/manifest.json"
+  },
+  "window_length_min": 90,
+  "step_min": 1,
+  "iob_duration_hours": 4,
+  "score_normalisation": "per_record_minmax",
+  "detector": {
+    "name": "slope_prominence",
+    "smooth_win": 7,
+    "lookback_min": 90,
+    "theta_slope": 0,
+    "merge_within_minutes": 60,
+    "merge_selection": "higher_peak_score",
+    "threshold_provenance": "Pool all finite delta_S values from the supplied historical full-fusion candidate exports; calculate unrounded Q75 and reuse across methods.",
+    "prominence_quantile": 0.75,
+    "prominence_quantile_method": "linear",
+    "prominence_scope": "dataset_wide_full_fusion",
+    "prominence_rounding": "none",
+    "peak_score_floor": null,
+    "candidate_population": "historical_candidate_export_rows"
+  },
+  "methods": {
+    "baseline": {
+      "savgol_window": 125,
+      "savgol_polyorder": 3,
+      "delta_y_min": "20/18",
+      "roc_min": "0.8/18"
+    },
+    "fusion": {
+      "weights": [
+        0.3,
+        0.3,
+        0.4
+      ],
+      "fallback_weights": [
+        0.5,
+        0.5,
+        0
+      ]
+    },
+    "signal_only": {
+      "weights": [
+        0.5,
+        0.5,
+        0
+      ]
+    },
+    "physiology_only": {
+      "weights": [
+        0,
+        0,
+        1
+      ]
+    }
+  },
+  "evaluation": {
+    "window_min": 45,
+    "matching": "global_absolute_difference_greedy_one_to_one",
+    "aggregation": "pool sessions within participant, then participant macro mean/sample SD",
+    "tie_break": "chronological_reference_index_then_detection_index"
+  },
+  "pending_decisions": [
+    "full-cohort numerical reproduction and manuscript-result acceptance (not performed in connectivity stage)"
+  ],
+  "reference_input": {
+    "status": "resolved_prepared_references_are_external_inputs",
+    "file_pattern": "ground_truth_{participant_id}_{variant}.csv",
+    "time_column": "ts",
+    "default_staging_directory": "results/evaluation/primary/ground_truth",
+    "preparation_scope": "upstream_dataset_preparation_excluded_from_repository",
+    "construction": "Recorded food-intake reports combined upstream with confirmed scheduled meals; additional reported intakes included",
+    "used_for": "evaluation_and_figures",
+    "supplement_scheduled_meals_in_repository": false
+  },
+  "gap_handling": {
+    "short_gap_limit_min": 30,
+    "upstream_day_exclusion_gap_min": 216,
+    "masked_intervals": "prepared-CGM gaps over 30 minutes, including breaks left by removed days",
+    "window_policy": "exclude_overlap",
+    "physiology": "restart_at_each_retained_segment",
+    "baseline": "125-sample cubic filter per retained segment"
+  }
+}

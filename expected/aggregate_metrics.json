@@ -1,0 +1,54 @@
+{
+  "status": "saved_primary_outputs_independently_checked_not_end_to_end_regenerated",
+  "n_participants": 16,
+  "n_sessions": 31,
+  "n_prepared_reference_events": 113,
+  "aggregation": "participant macro mean; sample SD (ddof=1)",
+  "methods": {
+    "baseline": {
+      "sensitivity_mean": 0.6283482142857143,
+      "sensitivity_sd": 0.13131207364877398,
+      "fp_per_day_mean": 0.5625,
+      "fp_per_day_sd": 0.47871355387816905,
+      "tp": 71,
+      "fp": 18,
+      "fn": 42,
+      "median_abs_onset_min": 9
+    },
+    "fusion": {
+      "sensitivity_mean": 0.8121279761904762,
+      "sensitivity_sd": 0.14109308905439547,
+      "fp_per_day_mean": 0.3125,
+      "fp_per_day_sd": 0.40311288741492746,
+      "tp": 91,
+      "fp": 10,
+      "fn": 22,
+      "median_abs_onset_min": 7
+    },
+    "signal_only": {
+      "sensitivity_mean": 0.6961805555555556,
+      "sensitivity_sd": 0.19688549149799908,
+      "fp_per_day_mean": 0.28125,
+      "fp_per_day_sd": 0.40697051490249264,
+      "tp": 79,
+      "fp": 9,
+      "fn": 34,
+      "median_abs_onset_min": 14
+    },
+    "physiology_only": {
+      "sensitivity_mean": 0.4246031746031746,
+      "sensitivity_sd": 0.09336788044350948,
+      "fp_per_day_mean": 0.21875,
+      "fp_per_day_sd": 0.40697051490249264,
+      "tp": 48,
+      "fp": 6,
+      "fn": 65,
+      "median_abs_onset_min": 1
+    }
+  },
+  "fusion_signed_matches": {
+    "early": 19,
+    "exact": 8,
+    "late": 64
+  }
+}

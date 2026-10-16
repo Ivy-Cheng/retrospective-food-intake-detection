@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "dataset_id": "my_dataset",
+  "time_basis": "local_naive",
+  "units": {
+    "glucose": "mmol/L",
+    "bolus": "U"
+  },
+  "records": [
+    {
+      "record_id": "p01_session1",
+      "participant_id": "p01",
+      "session_id": "session1",
+      "monitoring_days": 1.0,
+      "glucose_file": "../datasets/my_dataset/glucose.csv",
+      "bolus_file": "../datasets/my_dataset/bolus.csv",
+      "reference_file": "../datasets/my_dataset/references.csv"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+# Import-derived dependency names. Exact versions remain to be validated.
+numpy
+pandas
+scipy
+filterpy
+matplotlib
+plotly

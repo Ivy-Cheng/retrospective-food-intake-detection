@@ -1,0 +1,285 @@
+{
+  "snapshot_date": "2026-10-12",
+  "status": "standard_inputs_and_eight_configuration_entry_connected_connectivity_validation_only",
+  "copied_files": [
+    {
+      "source_relative_path": "fusion_based.py",
+      "repository_path": "fusion_based.py",
+      "sha256": "aa510a753ae83627dbf4a919b558e4cdb3a204f1db69c280e057a267c057271a",
+      "repository_sha256": "3b65e785465b6e761baea872a20fb2040f120744f1a94c3b2e8e9811731e05aa",
+      "modifications": [
+        {
+          "date": "2026-10-13",
+          "description": "Author-confirmed Table I Dexcom G7: 15-minute glucose change with 15/30/45 mg/dL thresholds; rename associated columns/AUC reader and remove Diatribe trends."
+        },
+        {
+          "date": "2026-10-15",
+          "description": "Standard CSV manifest input replaces sibling-project dependency; unified runner reuses original numerical scoring."
+        }
+      ]
+    },
+    {
+      "source_relative_path": "fusion_main.py",
+      "repository_path": "fusion_main.py",
+      "sha256": "77e1f66a14f736dfd32ca41dafa29084a234536744f867c0afcd2c63b3ce1707",
+      "repository_sha256": "83ea2ffd8ccff48958d3b7a7d34a23c1656d3795dba4b67ddcb2a6e9b40c2cba",
+      "modifications": [
+        {
+          "date": "2026-10-13",
+          "description": "Removed slope-prominence peak-score floor; use one unrounded full-fusion dataset Q75 with two-pass cached scoring where applicable."
+        },
+        {
+          "date": "2026-10-13",
+          "description": "Use the author-selected historical candidate-export pool for unrounded Q75; require explicit candidate calibration inputs."
+        },
+        {
+          "date": "2026-10-13",
+          "description": "Selectable exact equal weighting using 1.0/3.0 per component, preserving default weights and physiology-unavailable fallback."
+        },
+        {
+          "date": "2026-10-13",
+          "description": "Exclude prepared-CGM masked intervals from physiology, features, smoothing/detection/merging and baseline filtering; process retained segments independently."
+        },
+        {
+          "date": "2026-10-15",
+          "description": "Standard CSV manifest input replaces sibling-project dependency; unified runner reuses original numerical scoring."
+        },
+        {
+          "date": "2026-10-15",
+          "description": "Preserve wholly unavailable physiology as NaN for CGM-only fallback; protect conversion source roots and private provenance from writes."
+        }
+      ]
+    },
+    {
+      "source_relative_path": "parse_nhs_data.py",
+      "repository_path": "parse_nhs_data.py",
+      "sha256": "eac1177e440e7bcd5d477b9d5852dbeaa027ebb34c333c1c4830e92b4a0a8f40"
+    },
+    {
+      "source_relative_path": "evaluation_new.py",
+      "repository_path": "evaluation_new.py",
+      "sha256": "ecdc1cb9a2657cf86b973e0f0c692041ce305033e1a826888d4cb02a74db181f",
+      "repository_sha256": "68c14e754d50b535301dc9788b146a365cdef4f472ee453bd22d2e5fddb2533e",
+      "modifications": [
+        {
+          "date": "2026-10-12",
+          "description": "Removed raw-reference extraction and scheduled-meal merging; read supplied prepared reference CSVs."
+        },
+        {
+          "date": "2026-10-13",
+          "description": "Implemented shared ascending-absolute-difference event matching. Added separate external input and local output directories."
+        }
+      ]
+    },
+    {
+      "source_relative_path": "copy_evaluation.py",
+      "repository_path": "copy_evaluation.py",
+      "sha256": "a80c19fca05bdd59dc6d4ecb979231e5b52e95523030c9d8d2160047a01461ee",
+      "repository_sha256": "66cdf394d2204b527553a0dbcb19dcb7f2b28b84a35931577562e6d948e02f8e",
+      "modifications": [
+        {
+          "date": "2026-10-12",
+          "description": "Removed unused raw-reference extraction and scheduled-meal merging helpers."
+        },
+        {
+          "date": "2026-10-13",
+          "description": "Implemented shared ascending-absolute-difference event matching."
+        }
+      ]
+    },
+    {
+      "source_relative_path": "summary_table.py",
+      "repository_path": "summary_table.py",
+      "sha256": "e22ba52facb2e7a515fe13851b270e4a36c1d6fb7c9583859f94c8f66d8c26b4"
+    },
+    {
+      "source_relative_path": "result_plot.py",
+      "repository_path": "result_plot.py",
+      "sha256": "3ed32890303f10a016e0b684b50937464f8a8471042b79c0f87fa91e4313a021",
+      "repository_sha256": "57e967619fc72a442adec4a22f1b3cd7e5f068fa3ddf473eb00227aa4791f873",
+      "modifications": [
+        {
+          "date": "2026-10-13",
+          "description": "Added explicit output/format/DPI options for Figure 3 regeneration; plot statistics/style preserved."
+        }
+      ]
+    },
+    {
+      "source_relative_path": "results-display.py",
+      "repository_path": "results-display.py",
+      "sha256": "681d18ad901f3db4dcae96a0f6ff45cad02c7da97f886bc824061211e9fcf988",
+      "repository_sha256": "b0e80590b5e62d7c806abc6b6d4329864c5267c39c80dd48bd5d3cd162167fab",
+      "modifications": [
+        {
+          "date": "2026-10-12",
+          "description": "Read the same supplied prepared reference files as evaluation; do not add scheduled meals."
+        },
+        {
+          "date": "2026-10-13",
+          "description": "Implemented shared ascending-absolute-difference event matching."
+        }
+      ]
+    },
+    {
+      "source_relative_path": "visualization_final.py",
+      "repository_path": "visualization_final.py",
+      "sha256": "b12f5da7ca82fd66ea87dac667e2d74d3eaee3fb42f7600ef0629f2455eb4a4b"
+    },
+    {
+      "source_relative_path": "pipelines/physio_kf.py",
+      "repository_path": "pipelines/physio_kf.py",
+      "sha256": "65f1fabb0e41ba9c3b1160e4ce2908aed5b45ca29e12b7352926b480e1ad8410"
+    },
+    {
+      "source_relative_path": "pipelines/simple_heuristic_utils.py",
+      "repository_path": "pipelines/simple_heuristic_utils.py",
+      "sha256": "16bd18bd49b8646e04140a91112a742fda1883e9b0ae12232739c0e011ee3511",
+      "repository_sha256": "6ab04fe13b9765cfa86084443640eec42b58ef12990c642b9ea0415f3943b5b4",
+      "modifications": [
+        {
+          "date": "2026-10-13",
+          "description": "Exclude prepared-CGM masked intervals from physiology, features, smoothing/detection/merging and baseline filtering; process retained segments independently."
+        }
+      ]
+    },
+    {
+      "source_relative_path": "pipelines/fusion_refinement.py",
+      "repository_path": "pipelines/fusion_refinement.py",
+      "sha256": "55e5502dd2236f3cfe4019f4ee8052d924aec431a091707b2fcb2f43cfc8147e"
+    },
+    {
+      "source_relative_path": "pipelines/fusion_refinement_new.py",
+      "repository_path": "pipelines/fusion_refinement_new.py",
+      "sha256": "7cbf34308371f15851bb3e7452a3cb6ccbff4104f91b1b7dcc6aa3ae639a3132",
+      "repository_sha256": "59ea830fcc87fab10490ced4a6f45bf34a6ca9fa341e1768cfec373d72270560",
+      "modifications": [
+        {
+          "date": "2026-10-13",
+          "description": "Removed slope-prominence peak-score floor; use one unrounded full-fusion dataset Q75 with two-pass cached scoring where applicable."
+        },
+        {
+          "date": "2026-10-13",
+          "description": "Exclude prepared-CGM masked intervals from physiology, features, smoothing/detection/merging and baseline filtering; process retained segments independently."
+        }
+      ]
+    },
+    {
+      "source_relative_path": "pipelines/fusion_scoring.py",
+      "repository_path": "pipelines/fusion_scoring.py",
+      "sha256": "81a6f333c14f169ebf53d46ce3e6053ed38e4fd6eecf00e95a2d1a3fe2e0718d",
+      "repository_sha256": "07593f06a4b88a5a55902e898c08d30a7a9a5e5bfa41fcfbb1f593494912685f",
+      "modifications": [
+        {
+          "date": "2026-10-13",
+          "description": "Exclude prepared-CGM masked intervals from physiology, features, smoothing/detection/merging and baseline filtering; process retained segments independently."
+        }
+      ]
+    },
+    {
+      "source_relative_path": "pipelines/uom_study_windows.py",
+      "repository_path": "pipelines/uom_study_windows.py",
+      "sha256": "6425411c46e3f53275317e59612b9b438effdee27bf40abfe5c3462336995d6f"
+    }
+  ],
+  "extracted_preprocessing": {
+    "source_relative_path": "OhioT1DM/dataset/Dataset_v2.py",
+    "source_sha256": "b31c67d7efcd72df5f98cc1861d188145083bb75324bf5a1b4d062525604b6c1",
+    "repository_path": "pipelines/glucose_preprocessing.py",
+    "repository_sha256": "c7bc4357581f872436a7c4cb395744c12246473a3465a6b78fbe28b15d69aa3a",
+    "functions": [
+      "missing_chunks",
+      "interpolation",
+      "process_glucose_by_date"
+    ],
+    "function_bodies_preserved": false,
+    "original_import_rewired": true,
+    "modifications": [
+      {
+        "date": "2026-10-15",
+        "description": "Numerical interpolation unchanged; wrapper raises preprocessing errors by default instead of silently skipping failed days."
+      }
+    ]
+  },
+  "clinical_data_copied": true,
+  "existing_research_outputs_copied": true,
+  "additional_sources": [
+    {
+      "repository_path": "pipelines/event_matching.py",
+      "repository_sha256": "8b15d3b92dfdfb346ddd0b48fe2737f0c3a5da529032de0aa63b003173324479",
+      "description": "Shared globally ordered one-to-one temporal matching"
+    },
+    {
+      "repository_path": "pipelines/prominence_threshold.py",
+      "repository_sha256": "d4b13c24d191b67fcf7c0e5313055023421d0e2caf44d79a49ed09d56a5699f4",
+      "description": "Dataset-wide unrounded prominence calibration and application",
+      "modifications": [
+        {
+          "date": "2026-10-13",
+          "description": "Use the author-selected historical candidate-export pool for unrounded Q75; require explicit candidate calibration inputs."
+        },
+        {
+          "date": "2026-10-13",
+          "description": "Cached-score detection uses the same retained segments for smoothing, boundaries and evidence windows."
+        },
+        {
+          "date": "2026-10-15",
+          "description": "Validate candidate checksums and support the author-approved versioned pre-acceptance calibration for new datasets."
+        }
+      ]
+    },
+    {
+      "repository_path": "threshold_main.py",
+      "repository_sha256": "ca9cb6b9be5895878fe8ef351d5b291f3486592102f25b41bcbac6e242940a18",
+      "description": "Dataset-wide unrounded prominence calibration and application",
+      "modifications": [
+        {
+          "date": "2026-10-13",
+          "description": "Use the author-selected historical candidate-export pool for unrounded Q75; require explicit candidate calibration inputs."
+        }
+      ]
+    },
+    {
+      "repository_path": "pipelines/equal_weighting.py",
+      "repository_sha256": "31cc8646eeb0cccc80928c489721fd5d64cb434303d6b477c13c7378c0d87d81",
+      "description": "Exact one-third sensitivity weights with original signal-only fallback"
+    },
+    {
+      "repository_path": "pipelines/gap_masking.py",
+      "repository_sha256": "90e3ff43b2ecb18787dfc6d312d43a3374141bbe8c3892e73eb33971a2fb1891",
+      "description": "Shared prepared-CGM mask intervals and segment boundaries"
+    },
+    {
+      "repository_path": "pipelines/dataset_io.py",
+      "repository_sha256": "24fdc69fd4463247c8e46c37777e167d18880d2ecd3d6642c96e4cc90fc3edc1",
+      "description": "Reusable raw-CGM/bolus CSV manifest adapter"
+    },
+    {
+      "repository_path": "prepare_nhs_dataset.py",
+      "repository_sha256": "64adf3ae68883e33e7e4d0a3a85d33a5b9ee4aa8bcda087bd8d52baf4730a9f3",
+      "description": "Lossless date-shifted NHS input staging with source hash checks",
+      "modifications": [
+        {
+          "date": "2026-10-15",
+          "description": "Preserve wholly unavailable physiology as NaN for CGM-only fallback; protect conversion source roots and private provenance from writes."
+        }
+      ]
+    },
+    {
+      "repository_path": "run_experiments.py",
+      "repository_sha256": "871305adaf63d7ef45807845438b99e8138afda10a59f68f06f630df207bcc07",
+      "description": "Eight configurations, shared calibration, evaluation and plots"
+    },
+    {
+      "repository_path": "reproduce.py",
+      "repository_sha256": "58bd5b2f54835dc3448e5d862fb3fde47d18de338b665b0e62e284448c732169",
+      "description": "Experiment entry point and source integrity checks"
+    },
+    {
+      "repository_path": "examples/synthetic_demo.py",
+      "repository_sha256": "6633ae1e7a0d518b342ae4e8c19d72e6501f0aeb60dca1a5058bd4f967cb5269",
+      "description": "Public synthetic manifest/CSV generation with a retained gap"
+    }
+  ],
+  "clinical_data_scope": "Standardized date-shifted NHS data staged locally under Git-ignored datasets/nhs_v1; not authorized for release.",
+  "existing_research_outputs_scope": "Only historical candidate delta_S rows for optional NHS calibration; no archived model scores or detection results copied into the data bundle."
+}

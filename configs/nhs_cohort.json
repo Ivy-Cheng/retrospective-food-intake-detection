@@ -1,0 +1,170 @@
+{
+  "status": "observed_saved_primary_cohort",
+  "dataset": "nhs",
+  "n_participants": 16,
+  "n_sessions": 31,
+  "included_sessions": [
+    {
+      "participant_id": "01",
+      "variant": "fiasp",
+      "monitoring_days": 1
+    },
+    {
+      "participant_id": "01",
+      "variant": "aspart",
+      "monitoring_days": 1
+    },
+    {
+      "participant_id": "02",
+      "variant": "fiasp",
+      "monitoring_days": 1
+    },
+    {
+      "participant_id": "02",
+      "variant": "aspart",
+      "monitoring_days": 1
+    },
+    {
+      "participant_id": "03",
+      "variant": "fiasp",
+      "monitoring_days": 1
+    },
+    {
+      "participant_id": "03",
+      "variant": "aspart",
+      "monitoring_days": 1
+    },
+    {
+      "participant_id": "04",
+      "variant": "fiasp",
+      "monitoring_days": 1
+    },
+    {
+      "participant_id": "04",
+      "variant": "aspart",
+      "monitoring_days": 1
+    },
+    {
+      "participant_id": "06",
+      "variant": "fiasp",
+      "monitoring_days": 1
+    },
+    {
+      "participant_id": "06",
+      "variant": "aspart",
+      "monitoring_days": 1
+    },
+    {
+      "participant_id": "07",
+      "variant": "fiasp",
+      "monitoring_days": 1
+    },
+    {
+      "participant_id": "07",
+      "variant": "aspart",
+      "monitoring_days": 1
+    },
+    {
+      "participant_id": "08",
+      "variant": "fiasp",
+      "monitoring_days": 1
+    },
+    {
+      "participant_id": "08",
+      "variant": "aspart",
+      "monitoring_days": 1
+    },
+    {
+      "participant_id": "09",
+      "variant": "fiasp",
+      "monitoring_days": 1
+    },
+    {
+      "participant_id": "09",
+      "variant": "aspart",
+      "monitoring_days": 1
+    },
+    {
+      "participant_id": "10",
+      "variant": "fiasp",
+      "monitoring_days": 1
+    },
+    {
+      "participant_id": "10",
+      "variant": "aspart",
+      "monitoring_days": 1
+    },
+    {
+      "participant_id": "11",
+      "variant": "fiasp",
+      "monitoring_days": 1
+    },
+    {
+      "participant_id": "11",
+      "variant": "aspart",
+      "monitoring_days": 1
+    },
+    {
+      "participant_id": "13",
+      "variant": "fiasp",
+      "monitoring_days": 1
+    },
+    {
+      "participant_id": "13",
+      "variant": "aspart",
+      "monitoring_days": 1
+    },
+    {
+      "participant_id": "14",
+      "variant": "fiasp",
+      "monitoring_days": 1
+    },
+    {
+      "participant_id": "14",
+      "variant": "aspart",
+      "monitoring_days": 1
+    },
+    {
+      "participant_id": "15",
+      "variant": "fiasp",
+      "monitoring_days": 1
+    },
+    {
+      "participant_id": "15",
+      "variant": "aspart",
+      "monitoring_days": 1
+    },
+    {
+      "participant_id": "16",
+      "variant": "fiasp",
+      "monitoring_days": 1
+    },
+    {
+      "participant_id": "16",
+      "variant": "aspart",
+      "monitoring_days": 1
+    },
+    {
+      "participant_id": "17",
+      "variant": "fiasp",
+      "monitoring_days": 1
+    },
+    {
+      "participant_id": "18",
+      "variant": "fiasp",
+      "monitoring_days": 1
+    },
+    {
+      "participant_id": "18",
+      "variant": "aspart",
+      "monitoring_days": 1
+    }
+  ],
+  "excluded_sessions": [
+    {
+      "participant_id": "17",
+      "variant": "aspart",
+      "reason": "Device-configuration failure reported in manuscript"
+    }
+  ]
+}

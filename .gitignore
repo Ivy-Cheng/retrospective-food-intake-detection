@@ -1,0 +1,32 @@
+# Local research data and generated outputs
+/data/
+/results/*
+!/results/.gitkeep
+/plots/*
+!/plots/.gitkeep
+/examples/generated/
+/audit/
+
+# Python and local environment files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+.DS_Store
+
+# Clinical bundles remain local until data-sharing permission is confirmed.
+/datasets/*
+!/datasets/README.md
+
+# Local scientific comparisons are outside the primary NHS release.
+/experiments/
+
+# Local analysis/editor history and credentials
+.Rhistory
+.RData
+.ipynb_checkpoints/
+*.pem
+*.key
+.env.*

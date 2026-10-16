@@ -1,0 +1,25 @@
+# Provisional manuscript citation; confirm software authorship before release.
+cff-version: 1.2.0
+message: "Please cite the associated manuscript. Confirm this provisional citation before public release."
+title: "Reproducibility code for Context-aware and Fusion-based Retrospective Food Intake Detection for Diabetes Datasets"
+authors:
+  - family-names: Cheng
+    given-names: Nuo
+  - family-names: Thabit
+    given-names: Hood
+  - family-names: Nutter
+    given-names: Paul
+  - family-names: Harper
+    given-names: Simon
+preferred-citation:
+  type: unpublished
+  title: "Context-aware and Fusion-based Retrospective Food Intake Detection for Diabetes Datasets"
+  authors:
+    - family-names: Cheng
+      given-names: Nuo
+    - family-names: Thabit
+      given-names: Hood
+    - family-names: Nutter
+      given-names: Paul
+    - family-names: Harper
+      given-names: Simon

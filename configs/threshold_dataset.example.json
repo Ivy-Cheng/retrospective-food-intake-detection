@@ -1,0 +1,14 @@
+{
+  "records": [
+    {
+      "record_id": "session_01",
+      "score_file": "../input/session_01_scores.csv",
+      "time_column": "end",
+      "score_column": "score_6",
+      "time_grid_file": "../input/session_01_overall.csv",
+      "time_grid_column": "ts",
+      "evidence": "full_fusion",
+      "candidate_file": "../input/session_01_local_maxima.csv"
+    }
+  ]
+}
