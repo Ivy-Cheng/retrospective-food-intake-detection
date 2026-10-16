@@ -12,4 +12,4 @@
 | Figure 3 | evaluation/primary/onset/ | Onset summaries/plots connected |
 | Table VI | evaluation/table_vi.csv | Participant summary connected |
 
-Use the standard manifest entry point in docs/reproduction.md. Smoke output tables and figures demonstrate connectivity and are not manuscript acceptance targets. Historical expected/aggregate_metrics.json is retained as an archived reference until full-cohort numerical validation is separately requested.
+Use the standard manifest entry point in docs/reproduction.md. Smoke output tables and figures demonstrate connectivity and are not manuscript acceptance targets. Historical aggregate targets are local-only and excluded from the reader release. Final numerical acceptance targets remain pending full-cohort validation. Reproduction starts with the standard CSV/manifest bundle; source-format NHS dataset preparation is upstream.

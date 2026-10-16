@@ -39,7 +39,6 @@ def check_layout() -> list[str]:
         "docs/reproduction.md", "docs/data_format.md",
         "docs/paper_result_mapping.md", "docs/clinician_evaluation_scope.md",
         "pipelines/glucose_preprocessing.py", "examples/synthetic_demo.py",
-        "expected/aggregate_metrics.json", "tests/test_reproduction_checks.py",
         "results/.gitkeep", "plots/.gitkeep",
     ):
         if not (ROOT / filename).is_file():

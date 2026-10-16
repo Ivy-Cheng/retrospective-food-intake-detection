@@ -4,7 +4,9 @@
 
 The standard reader and eight-configuration entry point are connected. Connectivity tests cover synthetic data and one NHS session. Full 31-session algorithm reruns and comparison with manuscript targets have NOT been performed in this stage.
 
-Original OneDrive inputs remain read-only. The local shifted NHS bundle is in datasets/nhs_v1 and Git-ignored pending sharing permission.
+Start with already prepared standard CSV observations and a manifest, as specified in data_format.md. Raw CGM signal preprocessing is performed by this code. NHS raw-format conversion, date shifting and reference assembly occur upstream; the local preparation tools are not distributed or required.
+
+Original OneDrive inputs remain read-only. Authorized NHS users must supply the prepared external bundle at datasets/nhs_v1; it is Git-ignored pending sharing permission and absent from a GitHub checkout.
 
 ## Environment
 
@@ -47,7 +49,7 @@ Missing reference labels skip evaluation explicitly. Reference events are never 
 
 Numerical-gradient signal energy, trapezoidal trend AUC, longest uninterrupted post-IOB Ra rise, higher-peak-score merging, 15-minute G7 and shared masked processing are retained. Scheduled-reference preparation remains upstream.
 
-expected/aggregate_metrics.json is still an archived target, not an acceptance report for this newly connected full workflow. Full numerical reproduction, final manuscript synchronization, clean-install checking and license/citation decisions remain separate release tasks. The clinician reference dataset and its separate local audit are outside this NHS runner.
+Historical aggregate targets are excluded from the reader release because they have not been accepted against the newly connected full workflow. No final numerical acceptance target is supplied yet. Full numerical reproduction, final manuscript synchronization, clean-install checking and license/citation decisions remain separate release tasks. The clinician reference dataset and its separate local audit are outside this NHS runner.
 
     python reproduce.py --check-layout
     python -m unittest discover -s tests -p 'test_*.py'

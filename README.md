@@ -6,6 +6,8 @@ The standard CSV input interface supports the NHS study and new datasets. A unif
 
 **Current validation:** synthetic data and one NHS session have passed connectivity testing. Full-cohort numerical reproduction and comparison with manuscript targets have not been performed in this stage. See [validation record](docs/connectivity_validation.md).
 
+The reproduction starting point is a prepared set of standard CSV files and a manifest. CGM observations remain raw; this code performs signal preprocessing. NHS-specific source-file conversion and dataset assembly are upstream and are not distributed.
+
 ## Quick start
 
     pip install -r requirements.txt
@@ -16,7 +18,7 @@ The synthetic example includes a masked gap and exercises preprocessing, physiol
 
 ## Local NHS inputs
 
-The date-shifted standard bundle is datasets/nhs_v1/manifest.json. It contains raw CGM/bolus observations, separately supplied references and historical calibration prominences. Clinical files are Git-ignored until sharing permission is confirmed.
+For authorized NHS reproduction, place the already prepared date-shifted standard bundle at datasets/nhs_v1/manifest.json. The bundle is not included in a GitHub checkout. It contains raw CGM/bolus observations, separately supplied references and historical calibration prominences. Clinical files are Git-ignored until sharing permission is confirmed.
 
     python reproduce.py --manifest datasets/nhs_v1/manifest.json --validate-inputs
     python reproduce.py --manifest datasets/nhs_v1/manifest.json --records nhs_01_fiasp --methods all --smoke --out-dir results/nhs_smoke
@@ -27,7 +29,7 @@ To run all included records later, omit --records and --smoke. That full run has
 
 Provide glucose CSV (ts,value; mmol/L), optional bolus CSV (ts,dose; U) and a manifest. Optional references are evaluation-only. Without historical artifacts, full-fusion pre-acceptance candidates provide the pooled Q75 shared by all methods.
 
-See [input contract](docs/data_format.md), [run instructions](docs/reproduction.md), [dataset staging](datasets/README.md), [paper mapping](docs/paper_result_mapping.md) and [source provenance](docs/source_manifest.json).
+See [input contract](docs/data_format.md), [run instructions](docs/reproduction.md), [external dataset inputs](datasets/README.md), [paper mapping](docs/paper_result_mapping.md) and [source provenance](docs/source_manifest.json).
 
 Original module names and numerical calculations are retained where possible. New adapters and orchestration provide the runnable interface. Generated outputs remain Git-ignored; --check-layout verifies source integrity, not paper metrics.
 

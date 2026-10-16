@@ -1,6 +1,6 @@
 # Standard input contract (schema version 1)
 
-Runtime detection reads a versioned manifest and CSVs, with no sibling-project or OneDrive dependency.
+Reproduction starts from already prepared standard CSV files and a versioned manifest, with no sibling-project or OneDrive dependency. Here, prepared means arranged in the required file format: CGM values are raw observations, and signal preprocessing is performed by this repository. NHS raw-format conversion, date shifting and reference assembly are upstream and are not required steps in the reader release.
 
 | File | Columns | Units / role |
 |---|---|---|
@@ -40,11 +40,11 @@ The included glucose_preprocessing module preserves the original day-wise interp
 
 ## NHS bundle
 
-datasets/nhs_v1 contains 31 sessions from 16 participants; 17/aspart is excluded. One constant integer-day shift per participant anchors the earliest date at 2000-01-01, preserving time of day, all time intervals, measurement/dose values and duplicate observations. Raw headers, identifying strings and original dates are omitted.
+The external NHS bundle, when supplied under datasets/nhs_v1, contains 31 sessions from 16 participants; 17/aspart is excluded. One constant integer-day shift per participant anchors the earliest date at 2000-01-01, preserving time of day, all time intervals, measurement/dose values and duplicate observations. Raw headers, identifying strings and original dates are omitted.
 
 NHS references are the authoritative supplied files already combining reports and confirmed scheduled meals upstream. Conversion shifts their dates but does not infer or add events.
 
-Private source checksums and date-shift offsets are in audit/nhs_preparation_provenance.json. They are not part of the potential public data bundle. Clinical sharing permission remains unresolved; the local bundle is Git-ignored.
+Private source checksums and date-shift offsets remain in local provenance outside the reader release. They are not required runtime inputs. Clinical sharing permission remains unresolved; the local bundle is Git-ignored and absent from a GitHub checkout.
 
 ## Shared full-fusion calibration
 

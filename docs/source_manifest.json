@@ -51,11 +51,6 @@
       ]
     },
     {
-      "source_relative_path": "parse_nhs_data.py",
-      "repository_path": "parse_nhs_data.py",
-      "sha256": "eac1177e440e7bcd5d477b9d5852dbeaa027ebb34c333c1c4830e92b4a0a8f40"
-    },
-    {
       "source_relative_path": "evaluation_new.py",
       "repository_path": "evaluation_new.py",
       "sha256": "ecdc1cb9a2657cf86b973e0f0c692041ce305033e1a826888d4cb02a74db181f",
@@ -254,25 +249,20 @@
       "description": "Reusable raw-CGM/bolus CSV manifest adapter"
     },
     {
-      "repository_path": "prepare_nhs_dataset.py",
-      "repository_sha256": "64adf3ae68883e33e7e4d0a3a85d33a5b9ee4aa8bcda087bd8d52baf4730a9f3",
-      "description": "Lossless date-shifted NHS input staging with source hash checks",
-      "modifications": [
-        {
-          "date": "2026-10-15",
-          "description": "Preserve wholly unavailable physiology as NaN for CGM-only fallback; protect conversion source roots and private provenance from writes."
-        }
-      ]
-    },
-    {
       "repository_path": "run_experiments.py",
       "repository_sha256": "871305adaf63d7ef45807845438b99e8138afda10a59f68f06f630df207bcc07",
       "description": "Eight configurations, shared calibration, evaluation and plots"
     },
     {
       "repository_path": "reproduce.py",
-      "repository_sha256": "58bd5b2f54835dc3448e5d862fb3fde47d18de338b665b0e62e284448c732169",
-      "description": "Experiment entry point and source integrity checks"
+      "repository_sha256": "5118e641aec9746ba953de3f1d635ddf6710a86b3816586a13285eb1ad58dc2b",
+      "description": "Experiment entry point and source integrity checks",
+      "modifications": [
+        {
+          "date": "2026-10-16",
+          "description": "Reader release begins with standard CSV/manifest inputs; layout checks no longer require local archived targets or placeholder tests."
+        }
+      ]
     },
     {
       "repository_path": "examples/synthetic_demo.py",
@@ -281,5 +271,6 @@
     }
   ],
   "clinical_data_scope": "Standardized date-shifted NHS data staged locally under Git-ignored datasets/nhs_v1; not authorized for release.",
-  "existing_research_outputs_scope": "Only historical candidate delta_S rows for optional NHS calibration; no archived model scores or detection results copied into the data bundle."
+  "existing_research_outputs_scope": "Only historical candidate delta_S rows for optional NHS calibration; no archived model scores or detection results copied into the data bundle.",
+  "release_input_boundary": "Already prepared standard CSV observations and manifest; preprocessing runs in this repository. NHS raw-format conversion tools remain local and are excluded from the reader release."
 }

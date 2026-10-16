@@ -30,3 +30,10 @@ venv/
 *.pem
 *.key
 .env.*
+
+# Local preparation tools, publication notes and superseded checks
+/prepare_nhs_dataset.py
+/parse_nhs_data.py
+/docs/github_publication.md
+/expected/aggregate_metrics.json
+/tests/test_reproduction_checks.py

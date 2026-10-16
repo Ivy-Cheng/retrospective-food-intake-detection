@@ -2,7 +2,7 @@
 
 ## Scope
 
-The standardized raw-observation interface, NHS preparation tool and unified experiment runner are connected. This report records connectivity and input-integrity checks only. It does not establish reproduction of the manuscript's numerical results.
+The standardized raw-observation interface and unified experiment runner are connected. NHS source-format preparation was checked locally; its tools remain outside the reader release. This report records connectivity and input-integrity checks only. It does not establish reproduction of the manuscript's numerical results.
 
 ## Inputs and source protection
 
@@ -39,6 +39,10 @@ The synthetic run used automatic full-fusion pre-acceptance candidate collection
 - audit/nhs_preparation_provenance.json
 
 Both run manifests record status=passed, validation_level=connectivity_only and paper_result_validation=false. Generated files and private audit evidence remain Git-ignored.
+
+## Reader-release packaging update — 2026-10-16
+
+The reader release starts from standard CSV files and a manifest. Two local NHS preparation/parser modules are no longer part of source integrity checks, leaving 24 tracked source modules. The 26-module count above records the original validation snapshot. Local historical targets and the empty test placeholder are no longer required. These packaging changes do not change detection calculations.
 
 ## Remaining release work
 
