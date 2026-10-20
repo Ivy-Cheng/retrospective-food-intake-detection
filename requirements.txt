@@ -1,7 +1,7 @@
-# Import-derived dependency names. Exact versions remain to be validated.
-numpy
-pandas
-scipy
-filterpy
-matplotlib
-plotly
+# Direct dependencies verified with Python 3.12.7
+numpy==1.26.4
+pandas==2.2.3
+scipy==1.14.1
+filterpy==1.4.5
+matplotlib==3.9.2
+plotly==5.24.1

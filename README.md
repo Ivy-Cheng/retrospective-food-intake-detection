@@ -125,7 +125,7 @@ python -m pip install -r requirements.txt
 
 On Windows, activate the environment with `.venv\Scripts\Activate.ps1` in PowerShell.
 
-The existing environment used for connectivity checks was:
+The following environment was verified through a fresh installation, regression tests, the synthetic example, and the complete NHS experiment workflow:
 
 | Component | Tested version |
 | --- | --- |
@@ -137,7 +137,7 @@ The existing environment used for connectivity checks was:
 | matplotlib | 3.9.2 |
 | Plotly | 5.24.1 |
 
-The dependency list is currently unpinned. These versions document the tested environment; they are not asserted to be the original research environment. A fresh-install verification remains pending.
+Direct dependencies are pinned in requirements.txt. Installation and execution were verified with Python 3.12.7 using the versions listed above. These are the verified reproduction environment versions, not necessarily the original research environment.
 
 Run all subsequent commands from the repository root.
 
