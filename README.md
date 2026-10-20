@@ -552,8 +552,11 @@ Inputs under `datasets/`, generated results and synthetic CSVs are Git-ignored. 
 
 ## Scope, citation and license
 
-This repository preserves the original numerical implementation where possible and adds a reusable input layer and experiment runner. It currently provides a tested execution path rather than a completed independent numerical reproduction of every manuscript result.
+## Scope, citation and license
 
-When referring to this work, use the associated manuscript title and author information in [CITATION.cff](CITATION.cff). The citation is provisional while submission details and software attribution are being finalized.
+This repository provides preprocessing, feature extraction, food-intake detection, and evaluation through a standard CSV and manifest interface. Clean-environment installation and the NHS primary, ablation, and sensitivity experiments have been verified
+using the prepared external NHS inputs. Reproducing these experiments requires access to those inputs; cloning this repository alone is insufficient. The clinician-adjudicated evaluation is outside the current reader-facing reproduction scope.
 
-[LICENSE](LICENSE) currently records a pending license decision and does not grant an open-source license. Final license/citation metadata, clean-environment installation and full-cohort numerical acceptance remain release tasks.
+If you use this software in research, please cite the associated manuscript as described in [CITATION.cff](CITATION.cff), and report the software release or commit used. Publication details will be updated when available.
+
+The original software in this repository is licensed under the [MIT License](LICENSE). NHS and clinician-adjudicated datasets are external inputs and are not distributed or licensed by this repository. Third-party components remain subject to their respective licences.
