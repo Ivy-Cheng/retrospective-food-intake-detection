@@ -552,8 +552,6 @@ Inputs under `datasets/`, generated results and synthetic CSVs are Git-ignored. 
 
 ## Scope, citation and license
 
-## Scope, citation and license
-
 This repository provides preprocessing, feature extraction, food-intake detection, and evaluation through a standard CSV and manifest interface. Clean-environment installation and the NHS primary, ablation, and sensitivity experiments have been verified
 using the prepared external NHS inputs. Reproducing these experiments requires access to those inputs; cloning this repository alone is insufficient. The clinician-adjudicated evaluation is outside the current reader-facing reproduction scope.
 

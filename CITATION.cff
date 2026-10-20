@@ -1,42 +1,26 @@
 cff-version: 1.2.0
 type: software
-
-message: "If you use this software in your research, please cite the
-  associated paper listed under preferred-citation and identify
-  the software version used."
-
+message: "If you use this software in your research, please cite the associated paper listed under preferred-citation and identify the software version used."
 title: "Retrospective Food Intake Detection"
-
-abstract: "Code for retrospective food intake detection from continuous
-  glucose monitoring data, including preprocessing, signal and
-  physiology feature extraction, fusion-based detection, and
-  evaluation."
-
+abstract: "Code for retrospective food intake detection from continuous glucose monitoring data, including preprocessing, signal and physiology feature extraction, fusion-based detection, and evaluation."
 repository-code: "https://github.com/Ivy-Cheng/retrospective-food-intake-detection"
-
 authors:
   - family-names: Cheng
     given-names: Nuo
     orcid: "https://orcid.org/0009-0008-4409-2089"
     affiliation: "Department of Computer Science, The University of Manchester"
-
 version: "1.0.0"
 date-released: "2026-10-20"
 license: MIT
-
 keywords:
   - continuous glucose monitoring
   - food intake detection
   - sensor fusion
   - diabetes
   - reproducibility
-
 preferred-citation:
   type: unpublished
-
-  title: "Context-aware and Fusion-based Retrospective Food Intake
-    Detection for Diabetes Datasets"
-
+  title: "Context-aware and Fusion-based Retrospective Food Intake Detection for Diabetes Datasets"
   authors:
     - family-names: Cheng
       given-names: Nuo
@@ -46,5 +30,4 @@ preferred-citation:
       given-names: Paul
     - family-names: Harper
       given-names: Simon
-
   notes: "Manuscript submitted for publication."
